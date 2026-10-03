@@ -9,27 +9,48 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Primary brand color (from DESIGN.md)
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#0891B2", // cyan-600
-          hover: "#0E7490", // cyan-700
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
         },
       },
-      fontFamily: {
-        // UI font: Inter (from DESIGN.md)
-        sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
-        // Monospace for numbers: JetBrains Mono
-        mono: ["var(--font-geist-mono)", "monospace"],
-      },
-      boxShadow: {
-        // Custom shadows (from DESIGN.md - max shadow-sm)
-        sm: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1)",
-      },
       borderRadius: {
-        // Custom radius values (from DESIGN.md)
-        DEFAULT: "6px", // buttons
-        lg: "8px", // cards
-        full: "9999px", // badges
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
+        mono: ["var(--font-geist-mono)", "monospace"],
       },
     },
   },
