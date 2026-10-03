@@ -9,7 +9,11 @@ export const metadata: Metadata = {
   description: "Time tracking, invoicing, and client management for freelancers",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html
       lang="en"
