@@ -36,17 +36,16 @@ Freelance Invoice Tracker
 ## Core Features (Days 3-10)
 
 ### Auth Module (Day 3)
-- [ ] Create Supabase client utilities (`lib/supabase/`)
-  - [ ] `client.ts` - Client component client
-  - [ ] `server.ts` - Server component client
-  - [ ] `route-handler.ts` - API route client
-- [ ] Create auth pages
-  - [ ] `app/(auth)/login/page.tsx`
-  - [ ] `app/(auth)/signup/page.tsx`
+- [x] Create Supabase client utilities (`lib/supabase/`)
+  - [x] `client.ts` - Browser client (@supabase/ssr)
+  - [x] `server.ts` - Server client (@supabase/ssr)
+- [x] Create auth pages
+  - [x] `app/(auth)/login/page.tsx`
+  - [x] `app/(auth)/signup/page.tsx`
   - [ ] `app/(auth)/forgot-password/page.tsx`
   - [ ] `app/(auth)/reset-password/page.tsx`
-- [ ] Create auth middleware (`middleware.ts`)
-- [ ] Test: Signup → Login → Protected route redirect
+- [x] Create auth middleware (`middleware.ts`)
+- [ ] Test: Signup → Login → Protected route redirect (manual test needed)
 
 ### Dashboard (Day 4)
 - [ ] Create layout: `app/(dashboard)/layout.tsx` (sidebar, header)
